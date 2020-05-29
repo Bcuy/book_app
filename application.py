@@ -22,5 +22,10 @@ db = scoped_session(sessionmaker(bind=engine))
 
 
 @app.route("/")
+@app.route("/home")
 def index():
     return render_template('home.html')
+
+@app.route("/finder")
+def finder():
+    return render_template('finder.html')
