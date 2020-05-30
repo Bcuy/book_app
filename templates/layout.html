@@ -7,7 +7,7 @@
     <title>Book Finder</title>
     {% block header %}{% endblock header %}
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Book Finder</a>
+      <a class="navbar-brand" href="home">Book Finder</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -17,14 +17,14 @@
           <a class="nav-item nav-link" href="finder">Find a Book</a>
         </div>
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link" href="#">Login</a>
-          <a class="nav-item nav-link" href="#">Register</a>
+          <a class="nav-item nav-link" href="login">Login</a>
+          <a class="nav-item nav-link" href="register">Register</a>
         </div>
       </div>
   </nav>
 
   </head>
   <body>
-
+    {% block body %}{% endblock body %}
   </body>
 </html>

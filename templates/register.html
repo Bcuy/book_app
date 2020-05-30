@@ -1,0 +1,28 @@
+{% extends "layout.html "%}
+
+{% block header %}
+<h1>Register</h1>
+{% endblock header %}
+
+{% block body%}
+  <form method="post" action="">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+      {{ form.username.label(class="form-control-label")}}
+      {{ form.username(class="form-control", placeholder="Enter username (Between 2 and 20 characters)")}}
+    </div>
+    <div class="form-group">
+      {{ form.email.label(class="form-control-label")}}
+      {{ form.email(class="form-control", placeholder="Enter valid email address")}}
+    </div>
+    <div class="form-group">
+      {{ form.password.label(class="form-control-label")}}
+      {{ form.password(class="form-control", placeholder="Create password (between 6 and 20 characters)")}}
+    </div>
+    <div class="form-group">
+      {{ form.confirm_password.label(class="form-control-label")}}
+      {{ form.confirm_password(class="form-control", placeholder="Enter your password again")}}
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock body%}
