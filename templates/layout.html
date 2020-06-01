@@ -25,11 +25,11 @@
 
   </head>
   <body>
-    <div class="container">
+    <div id="centered-container">
       {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
           {% for category, message in messages %}
-            <div class="alert alert-{{ category }}">
+            <div class="alert alert-{{ category }}" style="text-align:center">
               {{ message }}
             </div>
           {% endfor %}
